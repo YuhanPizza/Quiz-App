@@ -1,0 +1,49 @@
+<resources>
+    <!-- Question Fragment -->
+    <string name="question_text">Question Text</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_correct">Correct Answer!</string>
+    <string name="toast_incorrect">Incorrect Answer!</string>
+
+    <!-- Dialog Titles -->
+    <string name="dialog_quiz_finished_title">Quiz Finished</string>
+    <string name="dialog_language_title">Select Language</string>
+    <string name="dialog_change_total_questions_title">Change Total Questions</string>
+    <string name="dialog_average_title">Quiz Average</string>
+    <string name="dialog_change">Change</string>
+    <string name="dialog_select_total_questions_title">Select Total Questions</string>
+
+    <!-- Dialog Messages -->
+    <string name="dialog_change_total_questions_message">Do you want to change the total number of questions?</string>
+    <string name="dialog_quiz_finished_message">Your Score: %1$d/%2$d</string>
+    <string name="dialog_average_message">Correct Answers: %1$d/%2$d</string>
+    <string name="toast_invalid_total_questions">Invalid number of questions</string>
+    <string name="dialog_average_message_with_results">Answered: %1$d\nQuestions: %2$d</string>
+
+    <!-- Dialog Buttons -->
+    <string-array name="total_questions_options">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_save_results">Save Results</string>
+    <string name="dialog_ignore_results">Ignore</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_change_total_questions_ok">OK</string>
+    <string name="dialog_change_total_questions_cancel">Cancel</string>
+    <string name="dialog_average_message_no_average">Previous Score: %1$d  Total Questions: %2$d</string>
+
+    <!-- Languages -->
+    <string name="language_english">English</string>
+    <string name="language_spanish">Spanish</string>
+    <string name="language_french">French</string>
+
+    <!-- Other -->
+    <string name="toast_results_cleared">Quiz results cleared</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Quiz App</string>
+</resources>
