@@ -86,29 +86,30 @@ public class MainActivity extends AppCompatActivity implements QuestionFragment.
         updateQuestion();
     }
 
+
     //loads the questionBank
     private void loadQuestionBank(){
         // true or false questions
-        questionBank.add(new Question("Question 1: Is the sky blue?", true, getRandomColor()));
-        questionBank.add(new Question("Question 2: Are dogs mammals?", true, getRandomColor()));
-        questionBank.add(new Question("Question 3: Is the Earth flat?", false , getRandomColor()));
-        questionBank.add(new Question("Question 4: Is the sun made of cheese?", false, getRandomColor()));
-        questionBank.add(new Question("Question 5: Do birds have feathers?", true, getRandomColor()));
-        questionBank.add(new Question("Question 6: Water boils at 100 degrees Celsius.", true, getRandomColor()));
-        questionBank.add(new Question("Question 7: The human body has 206 bones.", true, getRandomColor()));
-        questionBank.add(new Question("Question 8: Dolphins are mammals.", true, getRandomColor()));
-        questionBank.add(new Question("Question 9: The currency of Japan is the Yuan.", false, getRandomColor()));
-        questionBank.add(new Question("Question 10: Albert Einstein discovered the theory of relativity.", true, getRandomColor()));
-        questionBank.add(new Question("Question 11: The Sahara Desert is the largest desert in the world.", true, getRandomColor()));
-        questionBank.add(new Question("Question 12: Bees communicate by dancing.", true, getRandomColor()));
-        questionBank.add(new Question("Question 13: The Statue of Liberty was a gift from France to the United States.", true, getRandomColor()));
-        questionBank.add(new Question("Question 14: The planet Mars is larger than the Earth.", false, getRandomColor()));
-        questionBank.add(new Question("Question 15: The Nile River is the longest river in the world.", true, getRandomColor()));
-        questionBank.add(new Question("Question 16: Birds are the only animals that can fly.", false, getRandomColor()));
-        questionBank.add(new Question("Question 17: The Mona Lisa was painted by Vincent van Gogh.", false, getRandomColor()));
-        questionBank.add(new Question("Question 18: Diamonds are the hardest known substance.", true, getRandomColor()));
-        questionBank.add(new Question("Question 19: Brazil is the largest country in South America.", true, getRandomColor()));
-        questionBank.add(new Question("Question 20: The Eiffel Tower is located in London.", false, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_1), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_2), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_3), false , getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_4), false, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_5), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_6), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_7), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_8), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_9), false, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_10), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_11), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_12), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_13), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_14), false, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_15), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_16), false, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_17), false, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_18), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_19), true, getRandomColor()));
+        questionBank.add(new Question(getString(R.string.question_20), false, getRandomColor()));
 
 
         // Shuffle the question bank
@@ -119,21 +120,6 @@ public class MainActivity extends AppCompatActivity implements QuestionFragment.
     public boolean onCreateOptionsMenu(@NonNull Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
-    }
-
-    //supposedly sets the app language
-    private void setAppLanguage(String languageCode) {
-        Locale locale = new Locale(languageCode);
-        Locale.setDefault(locale);
-
-        Configuration config = new Configuration();
-        config.locale = locale;
-        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
-
-        // Save the selected language code to preferences for persistence
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString(APP_LANGUAGE_KEY, languageCode);
-        editor.apply();
     }
 
     //updates the question if there are still more questions in the questionbank
@@ -375,15 +361,8 @@ public class MainActivity extends AppCompatActivity implements QuestionFragment.
     protected void onResume() {
         super.onResume();
         loadQuizResults();
-        setAppLanguageFromPrefs();
     }
 
-    private void setAppLanguageFromPrefs() {
-        String languageCode = sharedPreferences.getString(APP_LANGUAGE_KEY, "");
-        if (!languageCode.isEmpty()) {
-            setAppLanguage(languageCode);
-        }
-    }
 
     @Override
     protected void onPause() {

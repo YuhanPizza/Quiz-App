@@ -1,0 +1,63 @@
+<resources>
+    <!-- Question Fragment -->
+    <string name="question_text">Teksto ng Tanong</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_correct">Tamang sagot</string>
+    <string name="toast_incorrect">maling sagot</string>
+
+    <!-- Dialog Titles -->
+    <string name="dialog_quiz_finished_title">Tapos na ang pagsusulit</string>
+    <string name="dialog_change_total_questions_title">Piliin ang Wika</string>
+    <string name="dialog_average_title">Karaniwang Pagsusulit</string>
+    <string name="dialog_change">pagbabago</string>
+    <string name="dialog_select_total_questions_title">Piliin ang Kabuuang Mga Tanong</string>
+
+    <!-- Dialog Messages -->
+    <string name="dialog_change_total_questions_message">Gusto mo bang baguhin ang kabuuang bilang ng mga tanong?</string>
+    <string name="dialog_quiz_finished_message">Iyong Iskor: %1$d/%2$d</string>
+    <string name="dialog_average_message">Tamang mga sagot: %1$d/%2$d</string>
+    <string name="toast_invalid_total_questions">Di-wastong bilang ng mga tanong</string>
+    <string name="dialog_average_message_with_results">Sinagot: %1$d\nMga tanong: %2$d</string>
+
+    <!-- Dialog Buttons -->
+    <string-array name="total_questions_options">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string name="dialog_cancel">Kanselahin</string>
+    <string name="dialog_save_results">I-save ang Mga Resulta</string>
+    <string name="dialog_ignore_results">Ignore</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_change_total_questions_ok">OK</string>
+    <string name="dialog_change_total_questions_cancel">Kanselahin</string>
+    <string name="dialog_average_message_no_average">Nakaraang Iskor: %1$d  Kabuuang mga Tanong: %2$d</string>
+
+    <!-- Other -->
+    <string name="toast_results_cleared">Na-clear ang mga resulta ng pagsusulit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">kumusta blank fragment</string>
+    <string name="app_name">Quiz App</string>
+    <string name="question_1">Asul ba ang langit?</string>
+    <string name="question_2">Ang mga aso ba ay mammals?</string>
+    <string name="question_3">Flat ba ang Earth?</string>
+    <string name="question_4">Ang araw ba ay gawa sa keso?</string>
+    <string name="question_5">May balahibo ba ang mga ibon?</string>
+    <string name="question_6">Ang tubig ay kumukulo sa 100 degree Celsius.</string>
+    <string name="question_7">Ang katawan ng tao ay may 206 na buto.</string>
+    <string name="question_8">Ang mga dolphin ay mga mammal.</string>
+    <string name="question_9">Ang pera ng Japan ay ang Yuan.</string>
+    <string name="question_10">Natuklasan ni Albert Einstein ang teorya ng relativity.</string>
+    <string name="question_11">Ang Sahara Desert ay ang pinakamalaking disyerto sa mundo.</string>
+    <string name="question_12">Ang mga bubuyog ay nakikipag-usap sa pamamagitan ng pagsasayaw.</string>
+    <string name="question_13">Ang Statue of Liberty ay isang regalo mula sa France sa Estados Unidos.</string>
+    <string name="question_14">Ang planetang Mars ay mas malaki kaysa sa Earth.</string>
+    <string name="question_15">Ang Nile River ay ang pinakamahabang ilog sa mundo.</string>
+    <string name="question_16">Ang mga ibon ay ang tanging mga hayop na maaaring lumipad.</string>
+    <string name="question_17">Ang Mona Lisa ay ipininta ni Vincent van Gogh.</string>
+    <string name="question_18">Ang mga diamante ay ang pinakamahirap na kilalang sangkap.</string>
+    <string name="question_19">Ang Brazil ay ang pinakamalaking bansa sa Timog Amerika.</string>
+    <string name="question_20">Ang Eiffel Tower ay matatagpuan sa London.</string>
+</resources>
